@@ -1,27 +1,45 @@
 import { Mail, Home, Airplay, Circle } from "react-feather";
-
+import student from "../../assets/images/student.png"
 export default [
   {
-    id: "home",
-    title: "Home",
+    id: "Dashbord",
+    title: "Dashbord",
     icon: <Home size={20} />,
     navLink: "/home",
   },
   {
-    id: "secondPage",
-    title: "Second Page",
+    id: "Course",
+    title: "CourseList",
     icon: <Mail size={20} />,
     navLink: "/second-page",
   },
   {
-    id: "smaplePage",
-    title: "Sample Page",
-    icon: <Airplay size={20} />,
+    id: "student",
+    title: "student",
+    icon:<Mail size={20} />,
     // navLink: "/sample",
     children: [
       {
-        id: "invoiceList",
-        title: "List",
+        id: "StudentList",
+        title: "StudentList",
+        icon: <Circle size={12} />,
+        navLink: "/apps/invoice/list",
+      },
+      {
+        id: "StudentEdit",
+        title: "StudentEdit",
+        icon: <Circle size={12} />,
+        navLink: "/apps/invoice/list",
+      },
+      {
+        id: "StudentUpdate",
+        title: "StudentUpdate",
+        icon: <Circle size={12} />,
+        navLink: "/apps/invoice/list",
+      },
+      {
+        id: "StudentDetail",
+        title: "StudentDetail",
         icon: <Circle size={12} />,
         navLink: "/apps/invoice/list",
       },
